@@ -1,14 +1,8 @@
-class switch_demo{
-String Scase(String fruits){
-	var x= (switch (fruits){
-			'apple'||'Apple'||'APPLE' =>'This is fruit',
-			'orange'||'Orange'||'ORANGE' =>'This is fruit',
-				
-				
-			_  =>'These fruits are not listed',
-	});
-	return(x);
+import 'package:lab4/lab4.dart';
+import 'dart:io';
+void main(List<String> arguments){
+	switch_demo sd = switch_demo();
+	print("enter any fruit name:");
+	String fruits =stdin.readLineSync()!;
+	print(sd.Scase(fruits));
 }
-}
-				
-	
